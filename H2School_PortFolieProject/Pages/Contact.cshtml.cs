@@ -9,8 +9,11 @@ namespace H2School_PortFolieProject.Pages
 {
     public class ContactModel : PageModel
     {
+        public Guest Guests { get; set; }
+
         public void OnGet()
         {
+
         }
     }
 }

@@ -5,13 +5,38 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome!</h1>
-    <p>Choose between searching for a specific PC or a specific User.</p>
+    <h1 class="display-4">Got any questions or ideas?</h1>
+    <p>Under here you can let me know if you have any sort of inputs, ideas or tips.</p>
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <a href="/UserSearch" class="btn btn-outline-danger" role="button">Search for a User</a>
+            <div class="col-sm">
+                
             </div>
         </div>
+        <div class="row">
+            <div class="col-md text-center">
+                <form class="form-group" method="post" asp-page="Success">
+                    <label>Enter email: </label>
+                    <input placeholder="Enter Email..." asp-for="@Model.Guests.Email" /> <br>
+                    <label>Enter name: </label>
+                    <input placeholder="Enter First Name..." asp-for="@Model.Guests.Name" /> <br>
+                    <label>Enter mobile: </label>
+                    <input placeholder="Enter Number..." asp-for="@Model.Guests.Mobile" />
+                    <div class="row">
+                        <div class="col-md">
+                                <textarea class="form-control" rows="8" asp-for="@Model.Guests.TextBox"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <br />
+                            <button class="btn btn-dark" name="Submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        
     </div>
 </div>
