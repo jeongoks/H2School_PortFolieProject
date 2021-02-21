@@ -15,28 +15,28 @@
         </div>
         <div class="row">
             <div class="col-md text-center">
-                <form class="form-group">
+                <form class="form-group" method="post" asp-page="Success">
                     <label>Enter email: </label>
-                    <input placeholder="Enter Email..." /> <br>
+                    <input placeholder="Enter Email..." asp-for="@Model.Guests.Email" /> <br>
                     <label>Enter name: </label>
-                    <input placeholder="Enter First Name..." /> <br>
+                    <input placeholder="Enter First Name..." asp-for="@Model.Guests.Name" /> <br>
                     <label>Enter mobile: </label>
-                    <input placeholder="Enter Number..." />
+                    <input placeholder="Enter Number..." asp-for="@Model.Guests.Mobile" />
+                    <div class="row">
+                        <div class="col-md">
+                                <textarea class="form-control" rows="8" asp-for="@Model.Guests.TextBox"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <br />
+                            <button class="btn btn-dark" name="Submit">Submit</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md">
-                <form method="post">
-                    <textarea class="form-control" name="" rows="8"></textarea>
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md">
-                <br />
-                <button class="btn btn-dark" name="Submit">Submit</button>
-            </div>
-        </div>
+        
+        
     </div>
 </div>

@@ -1,0 +1,12 @@
+﻿@page
+@model H2School_PortFolieProject.SuccessModel
+@{
+    ViewData["Title"] = "Success Page";
+}
+
+<div class="text-center">
+    <h3>You've send a message successfully to our admin!</h3><br />
+    <p>Thank you, @Model.Name,so much for sharing your ideas with us.</p>
+
+    <textarea class="form-control" rows="5"> @Model.TextBox</textarea>
+</div>

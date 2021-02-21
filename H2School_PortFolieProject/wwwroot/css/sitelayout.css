@@ -1,9 +1,9 @@
 ﻿header {
-    background-color: #e5e5e5;
+    background-color: #333333;
 }
 
 body {
-    background-color: #fff;
+    background-color: #222222 !important;
 }
 
 .border {
@@ -13,18 +13,35 @@ body {
     margin-right: 4px;
 }
 
-a:hover {
-    background-color: #e5e5e5;
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+a {
+    color: #790001;
+}
+
+    a:hover {
+        background-color: #333333;
+        color: #BB0000;
+    }
+
+textarea.form-control {
+    background-color: #333333;
+}
+
+label, p {
+    color: #F8F8F8 !important;
 }
 
 .footer-layout {
     background-size: 100%;
-    background: none repeat scroll 0% 0% #e5e5e5;
+    background: none repeat scroll 0% 0% #333333;
     background-clip: padding-box;
     border-top: 4px solid rgba(0,0,0,.1);
     padding-top: 4px;
     bottom: 0;
-    color: #444444;
+    color: #fff;
     left: 0;
     position: fixed;
     width: 100%;
